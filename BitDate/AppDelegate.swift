@@ -44,8 +44,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var initialViewController:UIViewController
         
-        if PFUser.currentUser() != nil {
-            initialViewController = storyboard.instantiateViewControllerWithIdentifier("CardsNavController") as! UIViewController
+        if currentUser() != nil {
+            
+            initialViewController = pageController
+            
+//            initialViewController = storyboard.instantiateViewControllerWithIdentifier("PageController") as! UIViewController
+        
+        
         }
         else {
             initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController")as! UIViewController
