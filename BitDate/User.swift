@@ -27,13 +27,13 @@ struct User {
 }
 
 //get avatar
-func getUserAsync(userID: String, callback: (User) -> () ) {
-    PFUser.query()?.whereKey("objectId", equalTo: userID).getFirstObjectInBackgroundWithBlock( { (object, error) -> Void in
-        if let pfUser = object as? PFUser {
-            let user = pfUserToUser(pfUser)
-            callback(user) }
-    })
-}
+//func getUserAsync(userID: String, callback: (User) -> () ) {
+//    PFUser.query()?.whereKey("objectId", equalTo: userID).getFirstObjectInBackgroundWithBlock( { (object, error) -> Void in
+//        if let pfUser = object as? PFUser {
+//            let user = pfUserToUser(pfUser)
+//            callback(user) }
+//    })
+//}
 
 func pfUserToUser(user: PFUser)->User {
     return User(id: user.objectId!,  name: user.objectForKey("firstName") as! String, pfUser: user)
