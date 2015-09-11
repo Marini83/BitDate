@@ -211,7 +211,9 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    //self.senderDisplayName = @"Banana";
+    //self.senderId = @"Monkey";
+    
     [[[self class] nib] instantiateWithOwner:self options:nil];
 
     [self jsq_configureMessagesViewController];
