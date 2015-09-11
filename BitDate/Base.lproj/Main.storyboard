@@ -76,16 +76,49 @@
                                     <constraint firstAttribute="height" constant="320" id="w1b-LD-jHf"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ial-ny-mRk">
+                                <rect key="frame" x="355" y="490" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="FT8-vf-LdD"/>
+                                    <constraint firstAttribute="width" constant="75" id="QPY-g4-QJE"/>
+                                </constraints>
+                                <state key="normal" image="yeah-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yeahButtonPressed:" destination="mBC-6g-TQw" eventType="touchUpInside" id="gFv-qv-jjR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjn-Cj-yci">
+                                <rect key="frame" x="170" y="490" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="59m-ES-Xnt"/>
+                                    <constraint firstAttribute="height" constant="75" id="aUv-aM-zja"/>
+                                </constraints>
+                                <state key="normal" image="nah-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nahButtonPressed:" destination="mBC-6g-TQw" eventType="touchUpInside" id="n28-nW-6aV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GSg-AW-B47" firstAttribute="top" secondItem="Ial-ny-mRk" secondAttribute="bottom" constant="35" id="HzM-eG-yAn"/>
+                            <constraint firstAttribute="centerX" secondItem="Ial-ny-mRk" secondAttribute="centerX" constant="-92.5" id="NDp-ZU-WOV"/>
+                            <constraint firstAttribute="centerX" secondItem="tjn-Cj-yci" secondAttribute="centerX" constant="92.5" id="Y7O-cD-hFa"/>
+                            <constraint firstItem="GSg-AW-B47" firstAttribute="top" secondItem="tjn-Cj-yci" secondAttribute="bottom" constant="35" id="kNR-Ak-cE0"/>
                             <constraint firstItem="Jvs-xH-Uhm" firstAttribute="top" secondItem="Y1f-TP-fim" secondAttribute="bottom" constant="10" id="lQ2-hg-i0m"/>
+                            <constraint firstItem="Ial-ny-mRk" firstAttribute="leading" secondItem="tjn-Cj-yci" secondAttribute="trailing" constant="110" id="nxq-CX-nrb"/>
                             <constraint firstAttribute="centerX" secondItem="Jvs-xH-Uhm" secondAttribute="centerX" id="vd6-M6-Idb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ifo-Li-fVF"/>
                     <connections>
                         <outlet property="cardStackView" destination="Jvs-xH-Uhm" id="9Lx-65-g3u"/>
+                        <outlet property="nahButton" destination="tjn-Cj-yci" id="DhO-Xu-x8r"/>
+                        <outlet property="yeahButton" destination="Ial-ny-mRk" id="j58-0V-MKH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKl-ry-JNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -110,7 +143,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xx-7l-gQd">
                                 <rect key="frame" x="16" y="548" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -134,6 +167,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svJ-zn-p1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2704" y="1616"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="OxK-zo-mtp">
+            <objects>
+                <tableViewController id="wXu-0k-AyP" customClass="MatchesTableViewController" customModule="BitDate" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" id="qXh-L6-kuE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="82" id="BTQ-cO-e9F" customClass="UserCell" customModule="BitDate" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BTQ-cO-e9F" id="ZrK-PX-wY4">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VGZ-9a-ksC">
+                                            <rect key="frame" x="18" y="3" width="75" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="Qay-xd-Slc"/>
+                                                <constraint firstAttribute="width" constant="75" id="fdX-zT-lsw"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwF-s0-GHa">
+                                            <rect key="frame" x="101" y="30" width="385" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RwF-s0-GHa" firstAttribute="leading" secondItem="VGZ-9a-ksC" secondAttribute="trailing" constant="8" id="5wx-o4-vD9"/>
+                                        <constraint firstItem="VGZ-9a-ksC" firstAttribute="leading" secondItem="ZrK-PX-wY4" secondAttribute="leadingMargin" constant="10" id="7Um-0u-01Z"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="RwF-s0-GHa" secondAttribute="trailing" constant="106" id="Ngx-iA-bPB"/>
+                                        <constraint firstItem="VGZ-9a-ksC" firstAttribute="top" secondItem="ZrK-PX-wY4" secondAttribute="topMargin" constant="-5" id="nvh-SE-inJ"/>
+                                        <constraint firstItem="RwF-s0-GHa" firstAttribute="top" secondItem="ZrK-PX-wY4" secondAttribute="topMargin" constant="22" id="pyu-yt-bPp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="avatarImageView" destination="VGZ-9a-ksC" id="o2w-dK-PV6"/>
+                                    <outlet property="nameLabel" destination="RwF-s0-GHa" id="Bcg-Od-yLp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wXu-0k-AyP" id="hHN-75-wd8"/>
+                            <outlet property="delegate" destination="wXu-0k-AyP" id="ox8-DR-fCE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Pgh-TR-hgN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMD-0W-JVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2704" y="2306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3qf-x6-Jh0">
+            <objects>
+                <navigationController storyboardIdentifier="MatchesNavController" id="7QK-04-u3I" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ab8-TC-8fX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wXu-0k-AyP" kind="relationship" relationship="rootViewController" id="XEt-Xz-teg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mmm-ty-RHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="2306"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JGD-xm-NKo">
@@ -172,4 +274,8 @@
             <point key="canvasLocation" x="1892" y="1616"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nah-button" width="75" height="75"/>
+        <image name="yeah-button" width="75" height="75"/>
+    </resources>
 </document>

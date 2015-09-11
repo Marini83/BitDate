@@ -6,8 +6,7 @@
 //  Copyright (c) 2015 Wub.com. All rights reserved.
 //
 
-#ifndef BitDate_Bridging_Header_h
-#define BitDate_Bridging_Header_h
-
-
-#endif
+#import <Parse/Parse.h>
+#import <ParseFacebookUtils/PFFacebookUtils.h>
+#import "FacebookSDK/FacebookSDK.h"
+#import "JSQMessagesViewController/JSQMessages.h"

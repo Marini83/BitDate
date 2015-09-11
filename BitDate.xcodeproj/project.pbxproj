@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3E9E45DD5CBE517764D7088E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E98AA3CD95C27B942636A2A /* libPods.a */; };
+		CE0BE6821B97A2FC00071CF7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BE6811B97A2FC00071CF7 /* LoginViewController.swift */; };
+		CE0BE6841B99AE2B00071CF7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0BE6831B99AE2B00071CF7 /* Default-568h@2x.png */; };
+		CE0BE6871B9A05A200071CF7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BE6861B9A05A200071CF7 /* User.swift */; };
+		CE0BE6891B9A098A00071CF7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BE6881B9A098A00071CF7 /* ProfileViewController.swift */; };
 		CE20927D1B8E21B2008C32BE /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20927C1B8E21B2008C32BE /* CardsViewController.swift */; };
 		CE2092831B93EFA1008C32BE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2092801B93EFA1008C32BE /* Parse.framework */; };
 		CE2092841B93EFA1008C32BE /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2092811B93EFA1008C32BE /* ParseFacebookUtils.framework */; };
@@ -31,6 +35,10 @@
 		CE6B4C2A1B86690A00488613 /* BitDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B4C291B86690A00488613 /* BitDateTests.swift */; };
 		CE6B4C351B879C2600488613 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B4C341B879C2600488613 /* CardView.swift */; };
 		CE6B4C371B87BC7600488613 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B4C361B87BC7600488613 /* SwipeView.swift */; };
+		CEDD12B51B9F4A520050A1F2 /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD12B41B9F4A520050A1F2 /* MatchesTableViewController.swift */; };
+		CEDD12B71B9F4C9F0050A1F2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD12B61B9F4C9F0050A1F2 /* UserCell.swift */; };
+		CEDD12B91B9FB8060050A1F2 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD12B81B9FB8060050A1F2 /* Match.swift */; };
+		CEDD12BB1BA091690050A1F2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD12BA1BA091690050A1F2 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,11 @@
 /* Begin PBXFileReference section */
 		0E98AA3CD95C27B942636A2A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2A4EA17BBE840BD0796A92 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CE0BE6801B97979A00071CF7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../Bridging-Header.h"; sourceTree = "<group>"; };
+		CE0BE6811B97A2FC00071CF7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE0BE6831B99AE2B00071CF7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE0BE6861B9A05A200071CF7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE0BE6881B9A098A00071CF7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CE20927C1B8E21B2008C32BE /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsViewController.swift; path = ../CardsViewController.swift; sourceTree = "<group>"; };
 		CE20927F1B93EFA1008C32BE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		CE2092801B93EFA1008C32BE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -70,10 +83,13 @@
 		CE6B4C1A1B86690A00488613 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE6B4C1D1B86690A00488613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CE6B4C231B86690A00488613 /* BitDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE6B4C281B86690A00488613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6B4C291B86690A00488613 /* BitDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDateTests.swift; sourceTree = "<group>"; };
 		CE6B4C341B879C2600488613 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CE6B4C361B87BC7600488613 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeView.swift; path = BitDate/SwipeView.swift; sourceTree = "<group>"; };
+		CEDD12B41B9F4A520050A1F2 /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
+		CEDD12B61B9F4C9F0050A1F2 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		CEDD12B81B9FB8060050A1F2 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		CEDD12BA1BA091690050A1F2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D41DC5D6BBA8CBCC42741DA7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,11 +125,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0BE67E1B977A9E00071CF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			path = ../BitDate;
+			sourceTree = "<group>";
+		};
+		CE0BE6851B9A057600071CF7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE0BE6861B9A05A200071CF7 /* User.swift */,
+				CEDD12B81B9FB8060050A1F2 /* Match.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		CE20927B1B8E214C008C32BE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				CE6B4C151B86690A00488613 /* ViewController.swift */,
+				CE0BE6811B97A2FC00071CF7 /* LoginViewController.swift */,
 				CE20927C1B8E21B2008C32BE /* CardsViewController.swift */,
+				CE0BE6881B9A098A00071CF7 /* ProfileViewController.swift */,
+				CEDD12B41B9F4A520050A1F2 /* MatchesTableViewController.swift */,
+				CEDD12BA1BA091690050A1F2 /* ChatViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -144,6 +181,7 @@
 		CE6B4C021B86690900488613 = {
 			isa = PBXGroup;
 			children = (
+				CE0BE6831B99AE2B00071CF7 /* Default-568h@2x.png */,
 				CE6B4C0D1B86690A00488613 /* BitDate */,
 				CE6B4C261B86690A00488613 /* BitDateTests */,
 				CE20927E1B93EF39008C32BE /* Frameworks */,
@@ -167,6 +205,7 @@
 				CE20927B1B8E214C008C32BE /* ViewControllers */,
 				CE6B4C331B879BAF00488613 /* Views */,
 				CE6B4C101B86690A00488613 /* AppDelegate.swift */,
+				CE0BE6851B9A057600071CF7 /* Data */,
 				CE6B4C171B86690A00488613 /* Main.storyboard */,
 				CE6B4C1A1B86690A00488613 /* Images.xcassets */,
 				CE6B4C1C1B86690A00488613 /* LaunchScreen.xib */,
@@ -180,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				CE6B4C0F1B86690A00488613 /* Info.plist */,
+				CE0BE6801B97979A00071CF7 /* Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -187,25 +227,18 @@
 		CE6B4C261B86690A00488613 /* BitDateTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE0BE67E1B977A9E00071CF7 /* Supporting Files */,
 				CE6B4C0C1B86690A00488613 /* Products */,
 				CE6B4C291B86690A00488613 /* BitDateTests.swift */,
-				CE6B4C271B86690A00488613 /* Supporting Files */,
 			);
 			path = BitDateTests;
-			sourceTree = "<group>";
-		};
-		CE6B4C271B86690A00488613 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE6B4C281B86690A00488613 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		CE6B4C331B879BAF00488613 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				CE6B4C361B87BC7600488613 /* SwipeView.swift */,
+				CEDD12B61B9F4C9F0050A1F2 /* UserCell.swift */,
 				CE6B4C341B879C2600488613 /* CardView.swift */,
 			);
 			name = Views;
@@ -272,6 +305,7 @@
 				TargetAttributes = {
 					CE6B4C0A1B86690A00488613 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 78AUZN5DAX;
 					};
 					CE6B4C221B86690A00488613 = {
 						CreatedOnToolsVersion = 6.4;
@@ -304,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6B4C191B86690A00488613 /* Main.storyboard in Resources */,
+				CE0BE6841B99AE2B00071CF7 /* Default-568h@2x.png in Resources */,
 				CE6B4C1E1B86690A00488613 /* LaunchScreen.xib in Resources */,
 				CE6B4C1B1B86690A00488613 /* Images.xcassets in Resources */,
 			);
@@ -356,12 +391,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0BE6821B97A2FC00071CF7 /* LoginViewController.swift in Sources */,
 				CE6B4C161B86690A00488613 /* ViewController.swift in Sources */,
 				CE6B4C111B86690A00488613 /* AppDelegate.swift in Sources */,
 				CE20927D1B8E21B2008C32BE /* CardsViewController.swift in Sources */,
+				CEDD12B51B9F4A520050A1F2 /* MatchesTableViewController.swift in Sources */,
+				CE0BE6871B9A05A200071CF7 /* User.swift in Sources */,
 				CE6B4C351B879C2600488613 /* CardView.swift in Sources */,
+				CE0BE6891B9A098A00071CF7 /* ProfileViewController.swift in Sources */,
 				CE6B4C371B87BC7600488613 /* SwipeView.swift in Sources */,
+				CEDD12BB1BA091690050A1F2 /* ChatViewController.swift in Sources */,
+				CEDD12B71B9F4C9F0050A1F2 /* UserCell.swift in Sources */,
 				CE6B4C141B86690A00488613 /* BitDate.xcdatamodeld in Sources */,
+				CEDD12B91B9FB8060050A1F2 /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +533,8 @@
 			baseConfigurationReference = D41DC5D6BBA8CBCC42741DA7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BitDate",
@@ -498,6 +542,8 @@
 				INFOPLIST_FILE = BitDate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -506,6 +552,8 @@
 			baseConfigurationReference = 3F2A4EA17BBE840BD0796A92 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BitDate",
@@ -513,6 +561,8 @@
 				INFOPLIST_FILE = BitDate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};

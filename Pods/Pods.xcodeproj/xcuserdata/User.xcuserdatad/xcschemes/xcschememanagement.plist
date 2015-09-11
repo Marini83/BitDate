@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSQMessagesViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JSQSystemSoundPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00AB7424F516D0BF8547E47097163799</key>
+		<key>291D1415C1FAF155AB0673EAC2DC0963</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3929D9AD17F4B087EEA8056770C6B4DE</key>
+		<key>38FA95802E5A30E78F038568BF3EAD74</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9FFCE6A576DAB7C7C9FDE9BCAADC2A8D</key>
+		<key>6EDE92AE0FBB2B81E56176AB16E10542</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B81D898E9809D1DAA3B8BD685624C8F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4162756F59DBEC87A21FC204019AC64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
