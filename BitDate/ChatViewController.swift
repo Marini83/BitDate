@@ -11,6 +11,9 @@ import Foundation
 
 class ChatViewController: JSQMessagesViewController {
     
+    
+    var messageListener: MessageListener?
+    var matchID: String?
     var senderAvatar: UIImage!
     var recipientAvatar: UIImage!
     var recipient: User!
@@ -28,7 +31,30 @@ class ChatViewController: JSQMessagesViewController {
 //        self.senderId = currentUser()!.id
 //        self.senderDisplayName = currentUser()!.name
        // println(currentUser()!.id)
+        if let id = matchID {
+            fetchMessages(id, {
+                messages in
+                for m in messages {
+                    self.messages.append(JSQMessage(senderId: m.senderID, senderDisplayName: m.senderID, date: m.date, text: m.message))
+                }
+                self.finishReceivingMessage()
+            })
+        }
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        if let id = matchID {
+            messageListener = MessageListener(matchID: id, startDate: NSDate(), callback: {
+                message in
+                self.messages.append(JSQMessage(senderId: message.senderID, senderDisplayName: message.senderID, date: message.date, text: message.message))
+                self.finishReceivingMessage()
+            })
+        }
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        messageListener?.stop()
     }
     
     override var senderId: String! {
@@ -80,7 +106,7 @@ class ChatViewController: JSQMessagesViewController {
             return incomingBubble
         }
     }
-    
+    //navigationItem.rightBarButtonItem?.image = UIImage(named: "myNewButton")
     override func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {
 //        var localSenderId = senderId
 //        var localRecipientId = self.recipientId
@@ -93,7 +119,10 @@ class ChatViewController: JSQMessagesViewController {
         let m = JSQMessage(senderId: senderId, senderDisplayName: senderDisplayName, date: date, text: text)
         //let m = JSQMessage(senderId: localSenderId, senderDisplayName: senderDisplayName, date: date, text: text)
         
-        self.messages.append(m)
+       // self.messages.append(m)
+        if let id = matchID {
+            saveMessage(id, Message(message: text, senderID: senderId, date: date))
+        }
         finishSendingMessage()
         
         

@@ -72,6 +72,10 @@ class MatchesTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let vc = ChatViewController()
+        let match = matches[indexPath.row]
+        vc.matchID = match.id
+        vc.title = match.user.name
+        
         vc.recipient = matches[indexPath.row].user
         navigationController?.pushViewController(vc, animated: true)
         

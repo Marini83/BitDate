@@ -39,6 +39,9 @@
 		CEDD12B71B9F4C9F0050A1F2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD12B61B9F4C9F0050A1F2 /* UserCell.swift */; };
 		CEDD12B91B9FB8060050A1F2 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD12B81B9FB8060050A1F2 /* Match.swift */; };
 		CEDD12BB1BA091690050A1F2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD12BA1BA091690050A1F2 /* ChatViewController.swift */; };
+		CEDD12BD1BA372350050A1F2 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDD12BC1BA372350050A1F2 /* libicucore.dylib */; };
+		CEDD12BF1BA3725A0050A1F2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDD12BE1BA3725A0050A1F2 /* libc++.dylib */; };
+		CEDD12C11BA373B50050A1F2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD12C01BA373B50050A1F2 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,9 @@
 		CEDD12B61B9F4C9F0050A1F2 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		CEDD12B81B9FB8060050A1F2 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		CEDD12BA1BA091690050A1F2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CEDD12BC1BA372350050A1F2 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		CEDD12BE1BA3725A0050A1F2 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		CEDD12C01BA373B50050A1F2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		D41DC5D6BBA8CBCC42741DA7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDD12BF1BA3725A0050A1F2 /* libc++.dylib in Frameworks */,
+				CEDD12BD1BA372350050A1F2 /* libicucore.dylib in Frameworks */,
 				CE20929A1B93F05A008C32BE /* libsqlite3.dylib in Frameworks */,
 				CE2092981B93F03E008C32BE /* libz.dylib in Frameworks */,
 				CE2092961B93F028008C32BE /* SystemConfiguration.framework in Frameworks */,
@@ -138,6 +146,7 @@
 			children = (
 				CE0BE6861B9A05A200071CF7 /* User.swift */,
 				CEDD12B81B9FB8060050A1F2 /* Match.swift */,
+				CEDD12C01BA373B50050A1F2 /* Message.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -158,6 +167,8 @@
 		CE20927E1B93EF39008C32BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEDD12BE1BA3725A0050A1F2 /* libc++.dylib */,
+				CEDD12BC1BA372350050A1F2 /* libicucore.dylib */,
 				CE2092991B93F05A008C32BE /* libsqlite3.dylib */,
 				CE2092971B93F03E008C32BE /* libz.dylib */,
 				CE2092951B93F028008C32BE /* SystemConfiguration.framework */,
@@ -404,6 +415,7 @@
 				CEDD12B71B9F4C9F0050A1F2 /* UserCell.swift in Sources */,
 				CE6B4C141B86690A00488613 /* BitDate.xcdatamodeld in Sources */,
 				CEDD12B91B9FB8060050A1F2 /* Match.swift in Sources */,
+				CEDD12C11BA373B50050A1F2 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
